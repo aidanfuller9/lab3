@@ -9,6 +9,18 @@ public class ArrayTests {
     assertArrayEquals(new int[]{ 3 }, input1);
 	}
 
+  @Test
+  public void testReverseInPlacelLengthThree() {
+    int[] input1 = { 1, 2, 3 };
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{ 3, 2, 1 }, input1);
+  }
+
+  @Test
+  public void testReverseNewLengthThree() {
+    int[] input1 = { 1, 2, 3 };
+    assertArrayEquals(new int[]{ 3, 2, 1 }, ArrayExamples.reversed(input1));
+  }
 
   @Test
   public void testReversed() {
